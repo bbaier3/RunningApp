@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9ECEB"
+    android:backgroundTint="#EEFAF8"
+    tools:context=".add_workout">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="62dp" />
+
+    <EditText
+        android:id="@+id/editRepDist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="350dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/rep_distance"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNumReps" />
+
+    <EditText
+        android:id="@+id/editWrktDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="150dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/workout_date"
+        android:inputType="date"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editNumReps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="450dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/number_of_reps"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editWrktDate" />
+
+    <Button
+        android:id="@+id/addToDB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="550dp"
+        android:background="#D6CECE"
+        android:backgroundTint="#EBECF3"
+        android:fontFamily="serif"
+        android:onClick="InsertDatabase"
+        android:text="@string/add"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints,TextContrastCheck"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="460dp" />
+
+    <EditText
+        android:id="@+id/editWorkType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="250dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/workout_type"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColorHint="#616161"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="96dp"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <EditText
+        android:id="@+id/editWrkTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/workout_name"
+        android:inputType="text"
+        android:textColorHint="#616161" />
+
+    <Button
+        android:id="@+id/returnFromAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="620dp"
+        android:background="#8E24AA"
+        android:fontFamily="serif"
+        android:text="@string/return_home" />
+
+</RelativeLayout>

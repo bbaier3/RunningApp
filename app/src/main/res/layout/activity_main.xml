@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFE5B8"
+    tools:context=".MainActivity">
+
+    <!-- Add TextView to display the date -->
+
+    <!-- Add CalendarView to display the Calendar -->
+
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="@string/welcome"
+        android:textColor="@android:color/background_dark"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="25dp" />
+
+    <Button
+        android:id="@+id/addWRKbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="450dp"
+        android:fontFamily="serif"
+        android:text="@string/add_workout"
+        tools:layout_editor_absoluteX="133dp"
+        tools:layout_editor_absoluteY="463dp" />
+
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="371dp"
+        android:layout_height="307dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp" />
+
+    <Button
+        android:id="@+id/checkWeatherbttn"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="505dp"
+        android:fontFamily="serif"
+        android:text="@string/check_weather" />
+
+    <Button
+        android:id="@+id/athleteStatsbttn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="570dp"
+        android:fontFamily="serif"
+        android:text="@string/athlete_stats" />
+
+    <Button
+        android:id="@+id/viewWrksbttn"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="390dp"
+        android:fontFamily="serif"
+        android:text="@string/view_all_workouts" />
+
+</RelativeLayout>
